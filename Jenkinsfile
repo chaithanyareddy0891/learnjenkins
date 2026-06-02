@@ -3,12 +3,16 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh "echo 'Hello, Maven'"
+                script{
+                    sh "echo 'Hello, Maven'"
+                }
             }
         }
         stage('Test') {
             steps {
-                sh "echo 'Hello, JDK'"
+                script{
+                    sh "echo 'Hello, JDK'"
+                }
             }
         }
     }
